@@ -6,13 +6,20 @@
 	</head>
 	<body>  
 		<h3>Sa se afiseze numerele impare pana la un numar n citit de la tastatura.</h3> <hr/>  
-		<script type="text/javascript">
-			var x = 1;        // inițializarea variabilei x
-			n=eval(prompt("Dati numarul:<br />"));
+		<script>
+			let x = 1, y = 1;        // inițializarea variabilei x
+			n=eval(prompt("Dati numarul:"));
 			while (x<= n) {        // verificare condiție
 				document.write("<br /> x este "+x);
 				x+=2;        // incrementarea variabilei x
 			}
+			// for(let i =1; i<= n; i=i+2){
+			// 	document.write("<br /> i este "+i);
+			// }
+			do{
+				document.write("<br /> y este "+y);
+				y+=2;
+			}while(y<=n)
 		</script> 
 </body>  
 </html>

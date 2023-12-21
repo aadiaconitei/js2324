@@ -8,27 +8,29 @@
 </head>
 <body>
     <script>
-        const myCars = ["Volvo", "BMW","Toyota", "Saab"];
-        console.log(myCars);
-        console.log(myCars[0]);
+        // const myCars = ["Volvo", "BMW","Toyota", "Saab"];
+        // console.log(myCars);
+        // console.log(myCars[0]);
 
-        const newCars = ["Ferrari","Porsche"];
-        const totalCars = myCars.concat(newCars);
-        console.log(totalCars);
-        console.log(totalCars.reverse());
-        console.log(totalCars.sort())
+        // const newCars = ["Ferrari","Porsche"];
+        // const totalCars = myCars.concat(newCars);
+        // console.log(totalCars);
+        // console.log(totalCars.reverse());
+        // console.log(totalCars.sort())
 
 
         var person = [];
+        person[0]='1999';
 		person["firstName"] = "John";
 		person["lastName"] = "Doe";
 		person["age"] = 46;
+        console.log(typeof person, person);
 		var x = person.length;         // person.length return 0   nu este array!!
 		var y = person[0]; 
 		//var x = Object.keys(person).length;         
-		//var y = person.firstName;  
-		//alert(x);
-		//alert(y);
+		//var y = person['firstName'];  
+		alert(x);
+		alert(y);
     </script>
 </body>
 </html>
