@@ -7,10 +7,10 @@
 </head>
 <body>
     <script>
-        let n = prompt(' Numarul n', 10);
+        let n = +prompt(' Numarul n', 10);
         let min =999, max =0;
         for( let i=1; i<=n; i++){
-            let numar = prompt('Numarul intodus este');
+            let numar = +prompt('Numarul intodus este');
             if( numar >= max){
                 max = numar;
             }
