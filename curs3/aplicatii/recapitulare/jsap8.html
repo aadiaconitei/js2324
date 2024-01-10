@@ -10,6 +10,11 @@
 
 <body>
     <script>
+        let x = 7;
+        y = x;
+        y = 5;
+        console.log(x);
+        console.log(y);
         const person1 = {
             firstName: "John",
             lastName: "Doe",
@@ -21,8 +26,11 @@
             'age': 46
         };
         const newPerson = person1;
-
-        console.log(newPerson == person1);
+        newPerson.age=54;
+        
+        console.log(person1);
+        console.log(newPerson);
+        console.log(newPerson === person1);
         console.log(person2 == person1);
         console.log(newPerson.length);
 

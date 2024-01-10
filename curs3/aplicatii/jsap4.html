@@ -12,8 +12,8 @@
 	<script>
 
 		function inmultire(x, y) {
-			rez = x * y
-			return rez
+			let rez = x * y;
+			return rez;
 		}
 
 		document.write('<table>');
@@ -21,9 +21,9 @@
 			if (i % 6 == 0 || i == 0) {
 				document.write('<tr>');
 			}
-			document.write('<td style="padding:15px">Tabla inmultirii cu ' + i + ' <br />');
+			document.write('<td style="padding:15px">Tabla inmultirii cu ' + i + ' <br>');
 			for (j = 1; j <= 10; j++) {
-				document.write(parseInt(i) + " x " + parseInt(j) + " = " + parseInt(inmultire(i, j)))
+			document.write(parseInt(i) + " x " + parseInt(j) + " = " + parseInt(inmultire(i, j)))
 				document.write('<br>');
 			}
 			document.write('</td>');
