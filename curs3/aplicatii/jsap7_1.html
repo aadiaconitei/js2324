@@ -17,19 +17,21 @@
         }
         sumaNr(2, 3);
     </script>
-    <p>Functii clasice cu returne</p>
+    <p>Functii clasice cu return</p>
     <p>Functii anonime</p>
     <script>
         let suma = function (a, b) { return a + b };
         console.log(suma);
+        console.log(suma(2, 3));
     </script>
     <p>Functii Lambda</p>
     <p>Functii Arraw =></p>
     <script>
-        
-        var anon = (a, b) => a + b;
+
+        var anon = (a, b) => a + b;//daca am o singura instructiune
         // sau
-        var anon = (a, b) => { return a + b };
+        var anon1 = (a, b) => { return a + b };
+        console.log(anon(2, 3));
     </script>
 </body>
 
