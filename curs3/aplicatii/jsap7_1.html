@@ -12,26 +12,31 @@
     <h1>Moduri de a defini o functie in javascript</h1>
     <p>Functii clasice fara return</p>
     <script>
+        // metoda 1 clasica functie ce nu returneaza nimic
         function sumaNr(a, b) {
             console.log(a + b);
         }
         sumaNr(2, 3);
-    </script>
-    <p>Functii clasice cu return</p>
-    <p>Functii anonime</p>
-    <script>
-        let suma = function (a, b) { return a + b };
-        console.log(suma);
-        console.log(suma(2, 3));
-    </script>
-    <p>Functii Lambda</p>
-    <p>Functii Arraw =></p>
-    <script>
 
+        // metoda 2 clasica functia returneaza o valoare
+        function suma2(a, b){
+            return a + b;
+        }
+        let mySuma = suma2(2,3);
+        console.log(mySuma);
+
+        // metoda 3 functie anonima
+        let suma = function (a, b) { return a + b };
+        console.log(suma(2, 3));
+
+        // metoda 4 functie anonima de tip arrow
         var anon = (a, b) => a + b;//daca am o singura instructiune
-        // sau
-        var anon1 = (a, b) => { return a + b };
         console.log(anon(2, 3));
+        
+        // sau
+        // metoda 5 functie anonime de tip arrow
+        var anon1 = (a, b) => { return a + b };
+        console.log(anon1(2, 3));
     </script>
 </body>
 
