@@ -14,15 +14,17 @@
         }
     </style>
     <h1 id="demo">Titlu</h1>
-    <p id="demo">Primul paragraf</p>
-    <p id="demo">Primul paragraf</p>
-    <p id="demo">Primul paragraf</p>
-    <p id="demo">Primul paragraf</p>
+    <div>
+        <p id="demo">Primul paragraf</p>
+        <p id="demo">Primul paragraf</p>
+        <p id="demo">Primul paragraf</p>
+        <p id="demo">Primul paragraf</p>
+    </div>
     <script>
         // let pagraf = document.getElementById('demo');
         let pagraf = document.querySelector('p:last-child');
 
-        pagraf.innerHTML = "<b>Salut</b>";
+        pagraf.innerHTML = "<b>Salut ultimul paragraf</b>";
     </script>
 </body>
 
