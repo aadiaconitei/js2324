@@ -29,9 +29,7 @@ function showProducts() {
     let minPrice = document.querySelector('#min').value
     let maxPrice = document.querySelector('#max').value
 
-    products
-        .filter(product => product.price >= minPrice && product.price <= maxPrice)
-        .forEach(product => {
+    products.filter(product => product.price >= minPrice && product.price <= maxPrice).forEach(product => {
             let div = document.createElement('div')
             div.classList.add('product')
             div.innerHTML = `
