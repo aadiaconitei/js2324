@@ -10,6 +10,20 @@
 
 <body>
     <script>
+        // "use strict"
+        // let x = parseInt(prompt("Introduce-ti un numar mai mic decat 5"))
+        // try {
+        //     let y = x;
+        //     if (y >= 5) {
+        //         throw new Error(" y este mai mare 5")
+        //     }
+        //     else {
+        //         alert(y)
+        //     }
+        // } catch (e) {
+        //     alert(e)
+        // }
+
         "use strict"
         let x = parseInt(prompt("Introduce-ti un numar mai mic decat 5"))
         try {
@@ -17,20 +31,10 @@
             if (y >= 5) throw new Error(" y este mai mare 5")
             else alert(y)
         } catch (e) {
-            alert(e)
-        }
-
-        // "use strict"
-        // let x = parseInt(prompt("Introduce-ti un numar mai mic decat 5"))
-        // try {
-        //     y = x - 10
-        //     if (y >= 5) throw new Error(" y este mai mare 5")
-        //     else alert(y)
-        // } catch (e) {
-        //     if (e instanceof ReferenceError) {
-        //         throw e
-        //     } else alert(`Eroarea este:${e}`)
-        // } 
+            if (e instanceof ReferenceError) {
+                throw e
+            } else alert(`Eroarea este:${e}`)
+        } 
     </script>
 </body>
 

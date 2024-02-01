@@ -79,7 +79,6 @@ function displayMenuButtons() {
         btn.addEventListener("click", function (e) {
             //console.log(e.currentTarget.dataset);
             counterClick(e.currentTarget);
-
             const category = e.currentTarget.dataset.id;
             const menuCategory = menu.filter(function (menuItem) {
                 // console.log(menuItem.category);

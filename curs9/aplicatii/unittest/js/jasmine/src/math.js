@@ -1,19 +1,19 @@
-function helloWorld() { 
-  return "hello world"; 
+function helloWorld() {
+  return "Hello World";
 }
 
-function sum (number1, number2) {
+function sum(number1, number2) {
   number1 = number1 * 100;
   number2 = number2 * 100;
   let sum = number1 + number2;
-  sum  = sum / 100;
-     return Number(sum.toFixed(2));
+  sum = sum / 100;
+  return Number(sum.toFixed(2));
 }
 
 function dif(number1, number2) {
   return number1 - number2;
 }
- 
+
 function inm(number1, number2) {
   return number1 * number2;
 }
@@ -36,24 +36,21 @@ function factorial(number) {
   }
 }
 
-function fibonacci(n){
+function fibonacci(n) {
   if (n === 1) {
-      return [0, 1];
-  }
-  else {
-      var s = fibonacci(n - 1);
-      s.push(s[s.length - 1] + s[s.length - 2]);
-      return s;
+    return [0, 1];
+  } else {
+    var s = fibonacci(n - 1);
+    s.push(s[s.length - 1] + s[s.length - 2]);
+    return s;
   }
 }
 
-
-function isPrime(num){
-  for (let i = 2; i < num; i++)
-      if (num % i === 0) return false;
+function isPrime(num) {
+  for (let i = 2; i < num; i++) if (num % i === 0) return false;
   return num !== 1 && num !== 0;
 }
 
 // Scriem un test care verifica daca este un numar par
-// Apoi scriem functia 
+// Apoi scriem functia
 // TDD

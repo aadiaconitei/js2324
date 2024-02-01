@@ -10,27 +10,26 @@
 
 <body>
     <script>
-        allert('Iar am  o eroare!');
 
-        // // alert('Salut eroare!');
 
-        // try{
-        //     allert('Iar am  o eroare!');
+        // try {
+        //     alert('Iar am  o eroare!');
         // }
-        // catch(error){
-        //      alert('Salut eroare!');
+        // catch (error) {
+        //     alert('Salut eroare!' + error);
         // }
     </script>
 
     <script>
-        // let y = 1;
-        // try {
-        //     allert("Hello!");
-        //     y = 0;
-        // } catch (error) {
-        //     console.log("I'm sorry, I couldn't find this method.");
-        // }
-        // console.log(y); //? 1 sau 0
+        let y = 10;
+        try {
+            y = 7;
+            allert("Hello!");
+            y = 5;
+        } catch (error) {
+            console.log("I'm sorry, I couldn't find this method.");
+        }
+        console.log(y); //? 10 sau 5
     </script>
 </body>
 

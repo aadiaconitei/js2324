@@ -21,16 +21,20 @@
             return x + y;
         }
 
-        // const result = add('a', 10);
+        // const result = add('a', 'b');
+
         // console.log(result);
 
         //Recomandat
         try {
-            const result = add('a', 10);
+            const result = add(5, 10);
             console.log(result);
         } catch (e) {
             // console.log(e);
             console.error(e);
+        }
+        finally {
+            console.log(' am incercat sa fac o adunare');
         }
     </script>
 </body>
